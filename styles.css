@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat';
+}
+  
+main {
+    padding: 20px;
+}
+
+main ul {
+    list-style: circle;
+    gap: 20px;
+}
+
+main li {
+    padding-bottom: 10px;
+}
+
+main p {
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 1.5;
+}
+
+.sticky-header {
+    position: sticky;
+    top: 0;
+    background-color: #2F4D65;
+    color: white;
+    padding: 10px 20px;
+    z-index: 1000;
+}
+
+.sticky-header h1 {
+    margin: 0;
+}
+
+.sticky-header h4 {
+    margin: 10px 0px 20px;
+}
+
+.sticky-header nav ul {
+    color: #FEFFFC;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.sticky-header nav ul li a {
+    color: #FEFFFC;
+    color: white;
+    text-decoration: none;
+}
+
+.sticky-header nav ul li a:hover {
+    color: #FEFFFC;
+    text-decoration: underline;
+}
