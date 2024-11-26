@@ -1,3 +1,9 @@
+p {
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 1.6;
+}
+
 body {
     margin: 0;
     font-family: 'Montserrat';
@@ -14,12 +20,9 @@ main ul {
 
 main li {
     padding-bottom: 10px;
-}
-
-main p {
     text-align: justify;
     text-justify: inter-word;
-    line-height: 1.5;
+    line-height: 1.6;
 }
 
 .sticky-header {

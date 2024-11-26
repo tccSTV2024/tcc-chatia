@@ -1,71 +1,178 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>TCC C14 - POLI-USP</title>
-        <link rel="stylesheet" href="styles.css">
-        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+        <link rel="stylesheet" href="styles.css" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Montserrat"
+            rel="stylesheet"
+        />
     </head>
     <body>
         <header class="sticky-header">
             <h1>Trabalho de Conclusão de Curso POLI-USP</h1>
-            <h4>Grupo C14 - Desenvolvimento de um Ambiente Integrado para Testes e Comparações de Múltiplos LLMs</h4>
+            <h4>
+                Grupo C14 - Desenvolvimento de um Ambiente Integrado para Testes
+                e Comparações de Múltiplos LLMs
+            </h4>
             <nav>
                 <ul>
-                    <li><a href="#section1">Monografia</a></li>
-                    <li><a href="#section2">Banner</a></li>
-                    <li><a href="#section3">Press Release</a></li>
-                    <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/ViniciusAriel/TCC-LLMs-App">GitHub</a></li>
-                    <li><a href="#section4">Demonstração</a></li>
+                    <li><a href="#">Monografia</a></li>
+                    <li><a href="#">Banner</a></li>
+                    <li><a href="#">Press Release</a></li>
+                    <li>
+                        <a
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href="https://github.com/ViniciusAriel/TCC-LLMs-App"
+                            >GitHub</a
+                        >
+                    </li>
+                    <li><a href="#">Demonstração</a></li>
                     <li><a href="#about-us">Sobre Nós</a></li>
                 </ul>
             </nav>
-          </header>
-          <main>
-            <section id="section1">
+        </header>
+        <main>
+            <section id="generic-info">
                 <h2>Informações Gerais</h2>
                 <ul>
                     <li><b>Orientador:</b> Fábio Cozman Gagliardi</li>
-                    <li><b>Integrantes:</b> Sophia Lie Asakura, Thiago Moreira Yanitchkis Couto e Vinicius Ariel de Arruda dos Santos</li>
-                    <li><b>Instituição:</b> Universidade de São Paulo (USP) - Escola Politécnica - Departamento de Engenharia de Computação e Sistemas Digitais (PCS)</li>
-                    <li><b>Ano:</b> São Paulo - SP - 2024</li>
+                    <li>
+                        <b>Integrantes:</b> Sophia Lie Asakura, Thiago Moreira
+                        Yanitchkis Couto e Vinicius Ariel de Arruda dos Santos
+                    </li>
+                    <li>
+                        <b>Instituição:</b> Universidade de São Paulo (USP) -
+                        Escola Politécnica - Departamento de Engenharia de
+                        Computação e Sistemas Digitais (PCS)
+                    </li>
+                    <li><b>Ano:</b> São Paulo - SP / 2024</li>
                 </ul>
             </section>
-            <section id="section2">
+            <section id="abstract">
                 <h2>Resumo</h2>
-                <p>Neste trabalho, apresentamos a motivação, planejamento e desenvolvimento de um ambiente
-                    de comparação para grandes modelos de linguagem (Large Language Models, LLMs)
-                    utilizando métricas variadas propostas na literatura. Ao final do projeto, esperamos que a
-                    ferramenta criada possa ser utilizada para agregar e comparar como se comportam diferentes
-                    LLMs, em diversas configurações de prompts simples. Com o avanço das tecnologias de
-                    Inteligência Artificial com foco na interpretação da linguagem natural, a produção de
-                    artigos acadêmicos focados no tema e o desenvolvimento de produtos que fazem uso
-                    extenso de inteligência artificial tem crescido exponencialmente. Neste contexto, faz-se
-                    necessário o desenvolvimento de ferramentas que auxiliam na medição e comparação do
-                    desempenho destes modelos. Nosso trabalho visa, portanto, representar um auxílio para o
-                    desenvolvimento dessas metodologias e na escolha do modelo de linguagem adequado.</p>
+                <p>
+                    Neste trabalho, apresentamos a motivação, planejamento e
+                    desenvolvimento de um ambiente de comparação para grandes
+                    modelos de linguagem (Large Language Models, LLMs)
+                    utilizando métricas variadas propostas na literatura. Ao
+                    final do projeto, esperamos que a ferramenta criada possa
+                    ser utilizada para agregar e comparar como se comportam
+                    diferentes LLMs, em diversas configurações de prompts
+                    simples. Com o avanço das tecnologias de Inteligência
+                    Artificial com foco na interpretação da linguagem natural, a
+                    produção de artigos acadêmicos focados no tema e o
+                    desenvolvimento de produtos que fazem uso extenso de
+                    inteligência artificial tem crescido exponencialmente. Neste
+                    contexto, faz-se necessário o desenvolvimento de ferramentas
+                    que auxiliam na medição e comparação do desempenho destes
+                    modelos. Nosso trabalho visa, portanto, representar um
+                    auxílio para o desenvolvimento dessas metodologias e na
+                    escolha do modelo de linguagem adequado.
+                </p>
             </section>
-            <section id="section3">
+            <section id="problem-solution">
                 <h2>Problema e Solução</h2>
-                <p>Content for Section 2</p>
+                <p>
+                    Nos últimos anos, tornou-se notável o crescimento do uso de
+                    Grandes Modelos de Linguagem (Large Language Models, LLMs).
+                    O lançamento do ChatGPT em novembro de 2022, que já contava
+                    com um milhão de usuários na primeira semana (MOLLMAN,
+                    2022), causou um crescimento exponencial no número de
+                    artigos contendo Large Language Model como palavra chave
+                    (ZHAO et al., 2023). Além disso, a popularização dos
+                    assistentes virtuais baseados em inteligência artificial
+                    trouxe uma transformação no uso de LLMs. Ao invés de serem
+                    utilizadas apenas para complementar textos simples e
+                    análises, estes modelos demonstraram-se capazes de realizar
+                    operações mais complexas como montagem e execução de
+                    códigos, utilização de referências e APIs externas, e
+                    conversações. (ATTARD, 2023)
+                </p>
+                <p>
+                    Entretanto, mesmo com os grandes avanços dessa tecnologia,
+                    ainda faz-se necessário ter um maior cuidado em sua
+                    utilização, principalmente quando os modelos de linguagem
+                    são tratados como fontes de informação. Para tanto, é
+                    fundamental que usuários, princi- palmente desenvolvedores,
+                    que pretendem utilizar os LLMs em seus trabalhos e
+                    pesquisas, tenham um olhar crítico sobre os modelos de
+                    linguagem, entendendo suas limitações e vantagens. Além
+                    disso, mesmo utilizando um mesmo prompt para todos os LLMs e
+                    com uma Engenharia de Prompt robusta, com instruções claras
+                    e diretas para os modelos de linguagens, estes ainda podem
+                    apresentar variações em suas respostas por seus parâmetros e
+                    configurações internas. Desta forma, torna-se necessária uma
+                    avaliação coerente e consciente dos modelos de acordo com
+                    cada contexto (ESTÊVÃO; ESTÊVÃO, 2023).
+                </p>
+                <p>
+                    Neste sentido, o grupo Knowledge Enhanced Machine Learning
+                    (KEML) do Center for Artifical Inteligence (C4AI) da USP
+                    (C4AI, 2024) realiza diferentes pesquisas e projetos
+                    relacionados a implementações de métricas de avaliação,
+                    avaliando o desempenho e a capacidade dos modelos de
+                    linguagem (C4AI, 2021), como é o caso do projeto HarpIA.
+                    Assim, este trabalho buscou entender os diferentes contextos
+                    de pesquisas realizadas pelo grupo, a fim de auxiliar no
+                    constante desenvolvimento desta área. Foi percebida a
+                    necessidade de uma ferramenta que facilitasse testes dos
+                    projetos em diferentes LLMs para averiguar diferenças nos
+                    comportamentos, direcionar a escolha de um modelo em
+                    detrimento de outros e avaliar as respostas dadas pelos
+                    modelos.
+                </p>
             </section>
-            <section id="section4">
-                <h2>Tecnologias Utilizadas</h2>
-                <p>Content for Section 3</p>
+            <section id="code-licence">
+                <h2>Disponibilização do Código Fonte e Licença</h2>
+                <p>
+                    A disponibilidade do ambiente tanto para a comunidade
+                    científica quanto para grupos que desejem comparar e
+                    escolher LLMs para seus projetos é um requisito essencial
+                    para que esse trabalho cumpra com os seus objetivos
+                    propostos. Portanto, licenciaremos o projeto sob a licença
+                    open-source Apache License 2.0 (ASL 2.0). Essa licença
+                    permissiva permite o uso do trabalho desenvolvido em
+                    projetos em outras licenças, permitindo o uso em projetos
+                    comerciais, além de prever a possibilidade de modificação do
+                    código fonte original.
+                </p>
             </section>
-            <section id="section5">
-                <h2>Desenvolvimeto do Projeto</h2>
-                <p>Content for Section 3</p>
-            </section>
-            <section id="section6">
-                <h2>Instalação e Utilização</h2>
-                <p>Content for Section 3</p>
+            <section id="continuity">
+                <h2>Perspectivas de Continuidade</h2>
+                <p>
+                    A partir da ferramenta e do ambiente desenvolvidos neste
+                    projeto, disponíveis na plataforma do GitHub, espera-se que
+                    seu uso facilite o desenvolvimento de novos métodos de
+                    avaliação e comparação do desempenho de modelos de
+                    linguagem. Além disso, o ambiente pode ser utilizado como
+                    ponte de integração para futuros projetos do KEML que se
+                    beneficiem do acesso a múltiplos LLMs simultaneamente. Por
+                    fim, o ambiente pode ser publicado para sua utilização pelo
+                    público geral, com a devida implementação de requisitos de
+                    segurança e financiamento do projeto.
+                </p>
             </section>
             <section id="about-us">
                 <h2>Sobre Nós</h2>
-                <p>Content for Section 3</p>
+                <ul>
+                    <li>
+                        <b>Sophia Lie Asakura:</b> Graduanda em Engenharia de
+                        Computação pela POLI-USP
+                    </li>
+                    <li>
+                        <b>Thiago Moreira Yanitchkis Couto:</b> Graduando em
+                        Engenharia de Computação pela POLI-USP
+                    </li>
+                    <li>
+                        <b>Vinicius Ariel de Arruda dos Santos:</b> Graduando em
+                        Engenharia de Computação pela POLI-USP
+                    </li>
+                </ul>
             </section>
-          </main>
+        </main>
     </body>
 </html>
